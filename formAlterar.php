@@ -1,15 +1,16 @@
 <?php
 $id = $_GET['id'];
-$con = mysqli_connect('localhost', 'root' , 'aulaphp');
-mysqli_query($con, "Select * from  aluno where id = '$id'");
+$conexão = mysqli_connect('localhost','root','','aulaphp');
+$busca = mysqli_query($conexão,"SELECT*FROM aluno WHERE id ='$id'");
 $resultado = mysqli_fetch_array($busca);
 
 ?>
-<form action= "GravarAlt.php" method="POST">
-    Nome:
-<input type="Text" name="nome" value="<?php echo $resultado['nome']"; ?php>
+<form action="gravarAlt.php" method="POST">
+Nome:
+<input type="text" name="nome" value="<?php echo $resultado['nome'];?>"/>
 <br>
-email
-<input type="Text"  name "email" value="<?php echo $resultado['email'];
+E-Mail:
+<input type="text" name="email" value="<?php echo $resultado['E-mail'];?>"/>
 <br>
-<input type="Submit" value="Enviar Dados"/>
+<input type="submit" value="Enviar>
+</form>
