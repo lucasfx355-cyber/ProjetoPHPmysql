@@ -1,7 +1,6 @@
 <?php
-$id = $_GET['Id'];
-$con = mysqli_connect('localhost', 'root', 'aulaphp');
-mysqli_query ($con, "Delete from aluno where id = '$id' ");
-hearder ("location:buscar.php")
-
+$id = $_GET['id'];
+$conexão = mysqli_connect('localhost','root','','aulaphp');
+mysqli_query($conexão,"DELETE FROM aluno WHERE id='$id'");
+header ("Location:aulaphp.php")
 ?>
