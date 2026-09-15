@@ -7,7 +7,7 @@ nome varchar(100) not null,
 email varchar(100) not null
 );
 
-insert into aluno(nome, email) values ('Luiz', 'luiz.santana4@aluno.cps.sp.gov.br');
-insert into aluno(nome, email) values ('Polly', 'Apollyongamerkwai@gmail.com');
-insert into aluno(nome, email) values ('Cain', 'CainmoggouAbel@outlook.com');
+insert into aluno(nome, email) values ('Lucas', 'lucas.reis12@aluno.cps.sp.gov.br');
+insert into aluno(nome, email) values ('wesley', 'Saborizado@gmail.com');
+insert into aluno(nome, email) values ('freefire', 'Fogolivre@outlook.com');
  select*from aluno;
