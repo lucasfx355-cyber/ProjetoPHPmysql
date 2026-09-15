@@ -14,6 +14,7 @@ while($resultado = mysqli_fetch_array($busca)){
     echo "<td>".$resultado['nome']."</td>";
     echo "<td>".$resultado['email']."</td>";
     echo "<td><a href=excluir.php?id=".$resultado['id'].">Excluir</a></td>";
+        echo "<td><a href=alterar.php?id=".$resultado['id'].">Alterar</a></td>";
     echo "</tr>";
 }
 echo "</table>";
