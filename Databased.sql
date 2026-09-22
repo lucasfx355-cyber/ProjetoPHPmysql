@@ -11,3 +11,6 @@ insert into aluno(nome, email) values ('Lucas', 'lucas.reis12@aluno.cps.sp.gov.b
 insert into aluno(nome, email) values ('wesley', 'Saborizado@gmail.com');
 insert into aluno(nome, email) values ('freefire', 'Fogolivre@outlook.com');
  select*from aluno;
+
+alter table aluno ADD colums senha varchar(255);
+alter table aluno ADD colum adm INT;
